@@ -1,0 +1,50 @@
+.btn[disabled] {
+	pointer-events: all;
+	cursor: not-allowed;
+}
+.alert-success, .alert-danger {
+	display: none;
+	position: absolute;
+}
+.modal-backdrop {
+	z-index: auto;
+}
+html {
+	-webkit-transition: background-color 1s;
+	transition: background-color 1s;
+}
+html, body { height: 100%; }
+html.loading {
+	background: #fff url('../img/preloader2.gif') no-repeat 50% 50%;
+	-webkit-transition: background-color 0;
+	transition: background-color 0;
+}
+body {
+	-webkit-transition: opacity 1s ease-in;
+	transition: opacity 1s ease-in;
+}
+html.loading body {
+	opacity: 0;
+	-webkit-transition: opacity 0;
+	transition: opacity 0;
+}
+.main-section .main-wrapper {
+	margin-top: 65px;
+	margin-bottom: 35px;
+}
+.how-to-play p {
+	font-size: 18px;
+}
+.game .col-sm-12 .lead {
+	margin-top: 10px;
+}
+.launch-game .fa {
+	padding-right: 10px;
+}
+.timer, .main-section h1, .rem-time, .how-to-play strong {
+	font-family: 'Bubblegum Sans', cursive;
+}
+.rem-time {
+	display: block;
+	font-size: 14px;
+}
